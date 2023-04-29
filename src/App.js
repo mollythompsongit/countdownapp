@@ -1,25 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import CountdownTimer from './Components/CountdownTimer/CountdownTimer';
+import Title from './Components/Title';
+import background from './background.jpg'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Title />
+      <div className="App" div style={{ backgroundImage: `url(${background})` }}>
+        <CountdownTimer
+          countdownTimestampMs={1703453498536} />
+      </div>
+    </>
   );
 }
 
 export default App;
+
+// 1643673600000 time all set to 0
+// 1743673600000 working countdown time

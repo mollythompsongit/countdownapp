@@ -1,0 +1,22 @@
+.countdown-timer {
+    width: 700px;
+    height: 120px;
+    border: 2px solid red;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: rgb(35, 108, 15);
+    background-color: antiquewhite;
+}
+
+.countdown-timer span {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.two-numbers {
+    width: 2ch;
+    ;
+}
